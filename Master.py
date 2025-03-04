@@ -334,7 +334,7 @@ def main():
     dispatcher.add_handler(CommandHandler("users", users))
     dispatcher.add_handler(CommandHandler("remove", remove_user))  # Add the new /remove command handler
     updater.start_polling()
-    updater.idle()
+updater.idle(timeout=10)  # Stops after 10 seconds of inactivity
 
 if __name__ == '__main__':
     main()
