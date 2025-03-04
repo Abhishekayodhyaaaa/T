@@ -333,7 +333,8 @@ def main():
     dispatcher.add_handler(CommandHandler("uptime", uptime))
     dispatcher.add_handler(CommandHandler("users", users))
     dispatcher.add_handler(CommandHandler("remove", remove_user))  # Add the new /remove command handler
-    dispatcher.run_polling()
+    updater.start_polling()
+    updater.idle()
 
 if __name__ == '__main__':
     main()
