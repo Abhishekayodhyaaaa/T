@@ -325,15 +325,15 @@ async def remove_user(update: Update, context: CallbackContext):
 def main():
     updater = Updater(token=TELEGRAM_BOT_TOKEN, use_context=True)
     dispatcher = updater.dispatcher
-    application.add_handler(CommandHandler("start", start))
-    application.add_handler(CommandHandler("MasterBhaiyaa", MasterBhaiyaa))
-    application.add_handler(CommandHandler("attack", attack))
-    application.add_handler(CommandHandler("myinfo", myinfo))
-    application.add_handler(CommandHandler("help", help))
-    application.add_handler(CommandHandler("uptime", uptime))
-    application.add_handler(CommandHandler("users", users))
-    application.add_handler(CommandHandler("remove", remove_user))  # Add the new /remove command handler
-    application.run_polling()
+    dispatcher.add_handler(CommandHandler("start", start))
+    dispatcher.add_handler(CommandHandler("MasterBhaiyaa", MasterBhaiyaa))
+    dispatcher.add_handler(CommandHandler("attack", attack))
+    dispatcher.add_handler(CommandHandler("myinfo", myinfo))
+    dispatcher.add_handler(CommandHandler("help", help))
+    dispatcher.add_handler(CommandHandler("uptime", uptime))
+    dispatcher.add_handler(CommandHandler("users", users))
+    dispatcher.add_handler(CommandHandler("remove", remove_user))  # Add the new /remove command handler
+    dispatcher.run_polling()
 
 if __name__ == '__main__':
     main()
