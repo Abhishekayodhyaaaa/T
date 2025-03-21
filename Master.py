@@ -9,7 +9,7 @@ attack_in_progress = False
 current_attack = None  # Store details of the current attack
 attack_history = []  # Store attack logs
 
-TELEGRAM_BOT_TOKEN = '7757214183:AAGG3MhfSFt53ESeJhcivgCNH8Ln0U39VPY'  # Replace with your bot token
+TELEGRAM_BOT_TOKEN = '8144243468:AAGkxy-Gd12EsEosyUR6AYwIm6x44NQoDz8'  # Replace with your bot token
 ADMIN_USER_ID = 1077368861
 MONGO_URI = "mongodb+srv://MasterBhaiyaa:MasterBhaiyaa@master.8aan4.mongodb.net/"
 DB_NAME = "master"
