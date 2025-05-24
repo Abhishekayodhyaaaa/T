@@ -11,7 +11,7 @@ keep_alive() {
 # Auto-Restart Trick
 while true; do
   echo "🚀 Starting Process at $(date)" | tee -a output.log
-  nohup python3 Master.py >> output.log 2>&1 &  # ✅ Append logs to output.log
+  nohup python3 a.py >> output.log 2>&1 &  # ✅ Append logs to output.log
   keep_alive &  # ✅ Start Keep Alive Function in background
   wait $!  # ✅ Wait for Master.py to finish
   echo "⚠️ Process Stopped, Restarting..." | tee -a output.log
